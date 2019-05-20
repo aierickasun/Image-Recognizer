@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "../node_modules/bootstrap/scss/bootstrap"; */
+
+body {
+  padding-top: 5rem;
+}
+.app-logo {
+  font-size: 1.5em;
+  font-family: arial;
+}
+.app-logo-container {
+  width: 100%;
+  text-align: center;
+}
+.input-container {
+  background-color: grey;
+}
+.output-container {
+  background-color: yellow;
+}
