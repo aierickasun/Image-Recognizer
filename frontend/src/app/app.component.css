@@ -14,7 +14,10 @@ body {
 }
 .input-container {
   background-color: grey;
+  margin: 0 0 auto;
+  width: 100%;
 }
 .output-container {
   background-color: yellow;
+  margin: 0 0 auto;
 }

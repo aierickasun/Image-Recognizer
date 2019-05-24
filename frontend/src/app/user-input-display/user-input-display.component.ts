@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-user-input-display',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInputDisplayComponent implements OnInit {
 
+  @Output() retrievedEvent2 = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  passEvent( label:string ) {
+    console.log("pass event");
+    this.retrievedEvent2.emit( label );
   }
 
 }

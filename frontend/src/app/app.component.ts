@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Label } from './label';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  eventPayload: string;
+
   public cards: Array<any> = [
     {text: 'Card 1'},
     {text: 'Card 2'},
@@ -20,5 +24,10 @@ export class AppComponent {
   ];
   addCard(cardText: string) {
     this.cards.push({text: cardText});
+  }
+
+  notifyLabelOutput( label: string ) {
+    this.eventPayload = label;
+    console.log(label);
   }
 }

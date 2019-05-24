@@ -6,9 +6,13 @@
 </nav>
 <div class="container-fluid text-center pb-5">
     <div class="row input-container">
-      <app-user-input-display></app-user-input-display>
+      <app-user-input-display
+        (retrievedEvent2)="notifyLabelOutput($event)"
+      ></app-user-input-display>
     </div>
     <div class="row output-container">
-      <app-label-output></app-label-output>
+      <app-label-output
+        [outputLabels]="eventPayload"
+      ></app-label-output>
     </div>
 </div>
